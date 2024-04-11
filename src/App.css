@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.container p {
+  
+  width: 75%;
+}
+
+span {
+  gap: 1rem;
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  
+}
+
+#logo {
+max-width: 150px;
+
+}
+
+
