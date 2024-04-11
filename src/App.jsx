@@ -8,6 +8,7 @@ function App() {
   const [email, setEmail] = useState(false)
   const [shipping, setShipping] = useState(false)
   const [label, setLabel] = useState("Change Me")
+  const [lang, setLang] = useState("en")
  
 
 
@@ -50,6 +51,17 @@ function App() {
         }
       }}
       />
+        <label>Language</label>
+      <select onChange={(e) => {setLang(e.target.value)}}>
+      <option value='en'>English</option>
+      <option value='ar'>Arabic</option>
+      <option value='fr'>French</option>
+      <option value='es'>Spanish</option>
+      <option value='pt'>Portuguese</option>
+      <option value='de'>German</option>
+      <option value='zh'>Chinese</option>
+      
+      </select>
       </span>
       <div id='button-div'>
       <CryptoPayButton 
@@ -64,6 +76,8 @@ function App() {
       email={email ? 'required':''}
 
       shippingAddress={shipping ? 'required':''}
+
+      lang={lang}
       
       
       />
