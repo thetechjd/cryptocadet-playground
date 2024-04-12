@@ -37,4 +37,16 @@ max-width: 150px;
 
 }
 
+@media (max-width: 690px){
+  #root {
+    width: 90%;
+  }
+  .container p {
+    width: 100%;
+  }
+  .settings {
+   flex-direction: column;
+  }
+}
+
 
